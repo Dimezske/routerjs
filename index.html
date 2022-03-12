@@ -265,7 +265,7 @@
 		<a href="#page10202">error</a>
 	</div>
 	<hr>
-	<div id="content"></div>
+	<div id="content-webpage"></div>
   
 	<script>
 		function get_content() {
@@ -276,7 +276,7 @@
 				fetch(`${url[0]}/pages/${page}.html`).then(response => {
 					return response.text()
 				}).then(content => {
-					document.getElementById("content").innerHTML = content
+					document.getElementById("content-webpage").innerHTML = content
 				})
 			})
 		}
